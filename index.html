@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>春节年俗 </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 灯笼装饰串 -->
+    <div class="lantern-left">
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+    </div>
+    <div class="lantern-right">
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+    </div>
+
+    <div class="app">
+        <div class="title-section">
+            <h1>🏮 春节年俗 🏮</h1>
+            <p>省份</p>
+        </div>
+
+        <div class="search-wrapper">
+            <input type="text" id="searchInput" placeholder="输入省份名称 如 四川、广东..." autocomplete="off">
+        </div>
+
+        <!-- 省份列表将动态渲染到这里 -->
+        <div id="provinceList" class="province-grid"></div>
+        <div class="footer-note">🧧 点击任一省份，解锁地道年味 🧧</div>
+    </div>
+
+    <!-- 模态框 -->
+    <div id="detailModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalProvinceName">四川省</h2>
+                <button class="close-btn" id="closeModalBtn">&times;</button>
+            </div>
+            <div class="modal-body" id="modalProvinceContent">
+                <!-- 动态内容 -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
